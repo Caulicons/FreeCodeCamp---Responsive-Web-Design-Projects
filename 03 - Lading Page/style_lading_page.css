@@ -1,0 +1,146 @@
+body, a, ul, li {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+.title {
+    display: flex;
+    color: black;
+}
+
+.titulopage {
+    font-size: 80px;
+    margin-bottom: 2px;
+}
+::before.titulopage {
+    image-rendering: auto;
+}
+
+#header-img {
+    display: flex;
+    justify-content: space-between;
+    background-color: tomato;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 50px;
+    border: 2px solid black;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a{
+    padding-left: 30px;
+    text-decoration: black;
+}
+
+.menu a li {
+    display: block;
+    margin: 25px;
+    background-color: #111;
+    justify-content: space-between;
+}
+
+.title {
+    margin-left: 250px;
+}
+
+#header {
+    font-size: 20px;
+}
+
+#pricing {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.grid   {
+    margin: 10px 100px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.box-buy-infor {
+    margin: 10px;
+    padding-bottom: 15px;
+    border: 2px solid black;
+    text-align: center;
+    flex-wrap: wrap;
+    min-width: 290px;
+}
+
+.buttomprice {
+    background-color: tomato;
+    padding: 7px;
+    border: 2px solid black;  
+}
+
+.titleprice {
+    width: 100%;
+    background-color: tomato;
+    justify-content: center;
+    font-size: 1.6rem;
+    border-bottom: 2px solid black;
+}
+
+.titleprice:last-child {
+    width: 400px;
+}
+
+.describeprice {
+    text-align: center;
+    padding-right: 27px;
+}
+
+span {
+    width: 100%;
+    background-color: tomato;
+}
+
+.ilustracao {
+    min-width: 320px;
+}
+
+.subtitulo {
+    font-size: 1.4rem;
+}
+
+#email {
+    border-radius: 10%;
+}
+.submit {
+    margin-top: 6px;
+}
+
+.video-infor {
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: tomato;
+    border: 2px solid black;
+}
+
+.conteuto {
+    margin: 0px 350px;
+}
+
+footer {
+    width: 100%;
+    background-color: tomato;
+    margin-top: 20px ;
+    border: 2px solid black;
+}
+
