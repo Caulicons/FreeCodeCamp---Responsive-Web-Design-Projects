@@ -1,157 +1,100 @@
 <!DOCTYPE html>
 
-
 <html lang="pt-br">
-  
-  <style>
-    
-    body {
-      background-color: #F5DEB3;
-      text-align: center;
-      font-size: 17px;
-      margin: 0;  
-    }
-    
-    ::selection {
-      color: #00FFFF;
-    }
-    
-    head {
-      margin: 0px;
-      background-color: #FFEBCD;
-      width: 100%; 
-    }
-    
-    h1 {
-      font-size: 80px;
-      margin-bottom: 0;
-      background-color: #FFEBCD;
-      width: 100%;
-    }
-    
-    h1::first-letter {
-      font-size: 100px;
-      font-family: "times New Roman", Times, serif;
-      margin-top: 0;
-    }
-    
-    img.vintao {
-      width: auto;
-      height: auto;
-    }
-    p {
-      background-color: #FFEBCD;
-      width: 100%;
-      margin-top: 0;
-      font-size: 25px;
-      font-family: "Times New Roman", Times, serif;
-    }
-    
-    ul.navegador {
-      width: 100%;
-      background-color: #DEB887;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      list-style-type: none;
-      position: fixed;
-      top: 0;
-  }
-    
-    li.navbar {
-      float: left;
-      
-    }
-    
-    li.navbar a {
-      display: block;
-      padding: 15px 15px;
-      background-color: #DEB887;
-      color: black; 
-    }
-    
-    li a:hover {
-      background-color: #FFE4B5;
-    }
-    
-    .active {
-      padding: 15px 15px;
-      background-color: #DEB887;
-      color: black;
-    }
-    
-    img {
-      width: auto;
-      height: 200px;
-      margin-top: 15;
-    }
-    #Conteudo {
-        text-align: center;
-        font-size: 40px;
-    }
-    
-    li.Cleft {
-      float: left;
-      border: 1.5px solid black;
-      width: 50%;
-      list-style-type: none;
-    }
-    
-    li.Cright {
-      float: right;
-      border: 1.5px solid black;
-      list-style-type: none;
-      margin: 0;
-      width: 49%;
-    }
-
-    img {
-  max-width: 100%;
-  display: block;
-  height: auto;
-  margin: 0 auto;
-}
-  </style> 
-  <main id="main">
-    <header>
-        <h1 id="title">
-            Leonardo Da Vinci.
-            <p class="subtitutlo">Um gênio além de seu tempo.</p>
-        </h1>
+  <head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="main">
+    <main>
+      <header>
+        <nav>
+          <ul class="navegador">
+            <li class="navbar"><a href="#main">Curiosities</a></li>
+            <li class="navbar"><a href="#Inventions">Inventions</a></li>
+            <li class="navbar"><a href="#Moreabout">More About</a></li>
+          </ul>
+        </nav>
       </header>
-    <nav>
-        <ul class="navegador">
-        <li class="navbar"><a href="#Life">Life</a></li> 
-        <li class="navbar"><a href="#Curiosities">Curiosities</a></li>
-        <li class="navbar"><a href="#Inventions">Inventions</a></li>
-        <li class="navbar"><a href="#More about">More About</a></li>
-        <li class="navbar" style="float:right"><a href="#Opa" class="active" ></a></li>
-            </ul>
-    </nav>
+      <div class="hero">
+        <h1 id="title">Leonardo Da Vinci.</h1>
+        <p class="subtitutlo">Um gênio além de seu tempo.</p>
+      </div>
+      <figure id="img-div">
+        <img
+          id="image"
+          class="vintao"
+          src="https://i2.wp.com/www.historiadasartes.com/wp-content/uploads/2017/10/m_LeonardoVinciAutorretrato.jpg?fit=457%2C640"
+          alt="Da Vince ao Lado de sua obra mais famosa."
+        />
+        <figcaption id="img-caption">
+          Auto Retrato de da Vinci ao lado de uma das suas obras mais famosas
+          <i> "O Homem Vitruviano" </i>
+        </figcaption>
+      </figure>
 
-    <figure id="img-div">
-        <img id="image" class="vintao" src="https://i2.wp.com/www.historiadasartes.com/wp-content/uploads/2017/10/m_LeonardoVinciAutorretrato.jpg?fit=457%2C640" alt="Da Vince ao Lado de sua obra mais famosa.">
-          <figcaption id="img-caption"> Auto Retrato de da Vinci ao lado de uma das suas obras mais famosas <i> "O Homem Vitruviano" </i></figcaption>
-    </figure>
-
-    <article id="tribute-info"> 
-        <h2 id="Conteudo"> Algumas de suas criações.</h2>
+      <article id="Inventions">
+        <h2 id="Conteudo" className="conteudo">Algumas de suas criações.</h2>
         <ul>
-            <li class="Cleft"><strong>1483-1485</strong>- Head of a Woman <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Leonardo_da_vinci%2C_Head_of_a_girl_01.jpg/144px-Leonardo_da_vinci%2C_Head_of_a_girl_01.jpg" alt="Head of a Woman"></li>
-            <li class="Cright"><strong>1485</strong>- The Vitruvian Man <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Da_Vinci_Vitruve_Luc_Viatour_%28cropped%29.jpg/120px-Da_Vinci_Vitruve_Luc_Viatour_%28cropped%29.jpg" alt="The Vitruvian Man"></li>
-            <li class="Cleft"><strong>1488</strong>- Leonardo's horse in Silverpoint <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Study_of_horse.jpg/123px-Study_of_horse.jpg" alt="Leonardo's horse in Silverpoint"></li>
-            <li class="Cright"><strong>1507-1516</strong>- Saint John the Baptist <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg/170px-Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg" alt="Saint John the Baptist"></li>
-            <li class="Cleft"><strong>1489-1491</strong>- Lady with an Emine <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg/170px-Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg" alt="Lady with an Emine"></li> 
-            <li class="Cright"><strong>1503-1516</strong>- Mona Lisa or La Gioconda <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/170px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="Mona Lisa"></li>
+          <li class="Cleft">
+            <strong>1483-1485</strong>- Head of a Woman
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Leonardo_da_vinci%2C_Head_of_a_girl_01.jpg/144px-Leonardo_da_vinci%2C_Head_of_a_girl_01.jpg"
+              alt="Head of a Woman"
+            />
+          </li>
+          <li class="Cright">
+            <strong>1485</strong>- The Vitruvian Man
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Da_Vinci_Vitruve_Luc_Viatour_%28cropped%29.jpg/120px-Da_Vinci_Vitruve_Luc_Viatour_%28cropped%29.jpg"
+              alt="The Vitruvian Man"
+            />
+          </li>
+          <li class="Cleft">
+            <strong>1488</strong>- Leonardo's horse in Silverpoint
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Study_of_horse.jpg/123px-Study_of_horse.jpg"
+              alt="Leonardo's horse in Silverpoint"
+            />
+          </li>
+          <li class="Cright">
+            <strong>1507-1516</strong>- Saint John the Baptist
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg/170px-Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg"
+              alt="Saint John the Baptist"
+            />
+          </li>
+          <li class="Cleft">
+            <strong>1489-1491</strong>- Lady with an Emine
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg/170px-Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg"
+              alt="Lady with an Emine"
+            />
+          </li>
+          <li class="Cright">
+            <strong>1503-1516</strong>- Mona Lisa or La Gioconda
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/170px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+              alt="Mona Lisa"
+            />
+          </li>
         </ul>
-    </article>
-
-    <footer>
-        <h2 id="fin"> If your're want view more about art of the Da Vinci, click <a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Leonardo_da_Vinci" >here</a> to be redirected for Da Vinci Wikipedia </h2>
-         <div id="Copyridth"> 
-                <small>direitos reservados para ninguém.</small>
-            </div>
+      </article>
+    </main>
+    <footer class="footer" id="Moreabout">
+      <h2 id="fin">
+        If your're want view more about art of the Da Vinci, click
+        <a
+          id="tribute-link"
+          target="_blank"
+          href="https://en.wikipedia.org/wiki/Leonardo_da_Vinci"
+          >here</a
+        >
+        to be redirected for Da Vinci Wikipedia
+      </h2>
+      <div id="Copyridth">
+        <small>direitos reservados para ninguém.</small>
+      </div>
     </footer>
-  </main> 
-
-  </html>
+  </body>
+</html>
